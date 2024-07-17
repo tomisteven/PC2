@@ -1,0 +1,117 @@
+.cont-admin-rifas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .input-rifa-modal {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin: 10px;
+  }
+
+  .cont-2-inputs-modal-rifa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+  }
+  .label-rifa-estado {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .cont-2-inputs-modal-rifa-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 10px;
+  }
+
+  .btn-editar-rifa-admin {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 3px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  .header-moda-edit-rifa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #5739005d;
+  }
+  .btn-eliminar-rifa-admin-table {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .cont-buttons-admin-rifa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .input-value-rifas {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+  }
+
+  .btn-eliminar-rifa-admin {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .btn-crear-rifa-admin {
+    background-color: #00ff00;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }

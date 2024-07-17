@@ -1,0 +1,129 @@
+.cont-seccion-material{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 600px;
+    padding: 2rem 0;
+    background-color: #9ecaff2f;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.input-nombre-sticker{
+    width: 50%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: rgb(7, 195, 38) 2px solid;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+
+}
+.options-materiales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.option-material{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.option-material img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.span-title{
+    font-size: 15px;
+    font-weight: 600;
+    color: #07c326;
+    margin-bottom: 10px;
+}
+.span-sub{
+    font-size: 15px;
+    font-weight: 600;
+    color: #006bc2;
+    margin-bottom: 10px;
+}
+
+.ul-materiales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.li-materiales{
+    font-size: 12px;
+    font-weight: 600;
+}
+.li-rugoso p{
+    font-size: 1rem;
+}
+
+
+/* responsivo */
+@media screen and (max-width: 767px){
+    .title-sections{
+        font-size: 15px;
+        font-weight: 500;
+        color: #000000;
+        margin-top: 10px;
+        text-align: center;
+        border-bottom: #07c3262a 2px solid;
+    }
+   .cont-seccion-material{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        padding-top: 35px;
+        background-color: #9ecaff2f;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        margin-top: -550px;
+    }
+    .options-materiales{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .option-material{
+        width: 50%;
+        height: auto;
+        margin: 20px 10px;
+    }
+    .ul-materiales{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .li-materiales{
+        font-size: 12px;
+        font-weight: 600;
+
+   }
+}

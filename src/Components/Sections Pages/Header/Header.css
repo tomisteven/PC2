@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'fuenteHeader';
+  src: url("../../../assets/Quicksand-Regular.otf") format('truetype');
+  /* Ajusta la ruta de la fuente según la ubicación real en tu proyecto */
+}
+
+
+.header {
+  background-color: #000000;
+  z-index: 1000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+}
+
+.header-scroll{
+  background-color: #000000;
+  z-index: 1000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  top: 5px;
+  font-size: 14px;
+  font-family: 'fuenteHeader';
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #f0f0f0;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.logo {
+  margin: -10px 0;
+  width: 70px; /* Ajusta el tamaño del logotipo según sea necesario */
+
+}
+
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.7s ease;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}
+
+
+

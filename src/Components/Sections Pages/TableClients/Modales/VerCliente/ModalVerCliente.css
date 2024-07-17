@@ -1,0 +1,194 @@
+.ver-producto-title{
+    width: 100;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.ver-cliente-comentarios{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #0000001b;
+}
+
+.comentarios-title{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ffe5659f;
+    margin-top: 20px;
+}
+
+.cont-2-title{
+    font-size: 14px;
+    width: 500px;
+    position: relative;
+    margin-right: 60px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cont-2-title span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffac68;
+}
+
+.cont-cliente-ver{
+    width: 1100px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cont1-cliente{
+    width: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont2-cliente{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont3-cliente{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ver-producto-title-c1{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ver-producto-title-c2{
+    width: 100px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.secion-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 1rem;
+}
+
+.secion-input-estado{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 1rem;
+    position: relative;
+    top: 10px;
+    right: 70px;
+}
+
+.edit-true{
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #00a2ffca;
+    margin-left: 10px;
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    box-shadow: 0px 0px 5px 0px #0000002c;
+}
+
+.items-de-estados{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #698aff9a;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px 0px #0000002c;
+    margin-right: 30px;
+    position: relative;
+    right: -30px;
+}
+
+.estado-pedido{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff46;
+}
+
+.loader-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}

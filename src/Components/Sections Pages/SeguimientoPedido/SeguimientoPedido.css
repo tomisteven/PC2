@@ -1,0 +1,175 @@
+.cont-seguimiento {
+  background-image: url("../../../assets/seguimiento.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -20px;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.seguimiento-url {
+  cursor: pointer;
+}
+.cont-seguimiento h1 {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cont-seguimiento p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.cont-seguimiento input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.buscar {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: seagreen;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.limpiar {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(180, 63, 63);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.cont-info-pedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  overflow-y: auto;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: aliceblue;
+
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 20px;
+}
+.rows-pedidos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  overflow-y: auto;
+  background-color: rgba(192, 226, 255, 0.288);
+  margin: 50px;
+
+  padding: 20px;
+}
+.cont-pedido-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.info-pedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: aliceblue;
+}
+
+.pedido,
+.fechaCompra {
+  font-weight: 700;
+}
+
+.cliente {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 136, 255);
+  padding: 5px 100px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.cont-estado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: aliceblue;
+  padding: 20px;
+
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.cont-estado .estado {
+  font-weight: 700;
+  color: green;
+  background-color: rgb(203, 231, 255);
+  padding: 10px 50px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .cont-seguimiento {
+    padding-top: 100px;
+    margin-bottom: -100px;
+  }
+  .cont-seguimiento h1 {
+    font-size: 30px;
+  }
+  .cont-seguimiento p {
+    font-size: 15px;
+  }
+  .cont-seguimiento input {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .cont-seguimiento button {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .cont-info-pedido {
+    padding: 10px;
+  }
+  .cont-estado {
+    padding: 10px;
+  }
+  .cont-estado .estado {
+    padding: 5px 20px;
+  }
+}

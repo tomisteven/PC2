@@ -1,0 +1,205 @@
+.personalizar-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+.personalizar-container-title{
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: start;
+  width: 92%;
+  position: relative;
+  top: 20px;
+}
+
+.cont-multipasos-precios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 92%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.cont-btns-personalizar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+.title-sections {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  position: relative;
+  bottom: 20px;
+
+  border-bottom: #07c3262a 2px solid;
+}
+
+/* boton siguiente */
+.button-siguiente {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 15px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.button-siguiente-e {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 15px;
+  background: green;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.button-siguiente span {
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
+}
+
+.button-siguiente span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.button-siguiente:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+
+.button-siguiente:hover {
+  color: white;
+}
+
+.button-siguiente:active span::before {
+  background: #2751cd;
+}
+
+
+
+
+/*  */
+
+.personalizar-button-enviar{
+  border: 3px dashed #ffa01c77;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 13px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  background-color: rgb(70, 76, 255);
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.personalizar-button-enviar:hover{
+  background-color: orange;
+  color: white;
+  transition: all 0.5s;
+}
+
+
+/* responsivo */
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  /* Agrega aquí los estilos específicos para dispositivos móviles */
+  .personalizar-container {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+  }
+  .personalizar-container-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 92%;
+  }
+  .cont-multipasos-precios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    height: auto;
+    margin-top: 600px;
+  }
+  .cont-btns-personalizar{
+    position: fixed;
+    bottom: 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+  .button-siguiente{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: rgba(109, 47, 255, 0.611);
+    color: #ffffff;
+  }
+}

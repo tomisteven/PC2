@@ -1,0 +1,153 @@
+.cont-precios-detalles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 600px;
+    margin-left: 10px;
+    background-color: #000133e0;
+    border-radius: 14px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .title-personalizar{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+
+    position: relative;
+    bottom: 10px;
+  }
+  .span-client{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: rgb(255, 188, 64);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+.cont-precio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 14px;
+  }
+
+  .precio-title{
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .precio-title span{
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: rgb(255, 166, 0);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+
+  .cont-precio-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    height: auto;
+    border-bottom: #ffffff 2px solid;
+    margin-bottom: 10px;
+  }
+
+  .precio-precio{
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .label-total{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .label-total h5{
+    font-size: 17px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: rgba(9, 255, 0, 0.61);
+    padding: 5px;
+    border-radius: 5px;
+
+  }
+  .label-confirmar{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+    .label-confirmar h5{
+        font-size: 15px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: rgba(255, 0, 0, 0.736);
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+
+    /* RESPONSIVO */
+
+    @media screen and (max-width: 767px){
+        .cont-precios-detalles{
+            width: 90%;
+            height: 100%;
+            margin-left: 0px;
+            margin-top: 10px;
+            padding: 25px;
+        }
+        .cont-precio{
+            width: 100%;
+            height: auto;
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        .cont-precio-info{
+            width: 100%;
+            height: auto;
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        .label-total{
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .label-confirmar{
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .label-confirmar h5{
+          background-color: rgba(255, 0, 0, 0.681);
+          color: #ffffff;
+        }
+    }

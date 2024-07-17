@@ -1,0 +1,43 @@
+.range-peso{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.options-rugosos-p{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.option-rugoso p{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+   right : 170px;
+}
+.li-rugoso p{
+    font-size: 1rem;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 768px) {
+    .range-peso{
+        width: 100%;
+    }
+    .option-rugoso p{
+        right: 0;
+    }
+    .options-rugosos-p{
+        width: 90%;
+    }
+}

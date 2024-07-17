@@ -1,0 +1,48 @@
+.cont-productos-table{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.producto-table{
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.055);
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.input-producto{
+   margin: 5px;
+}
+
+.cont-loader{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media  screen and (max-width: 768px) {
+    .cont-productos-table{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

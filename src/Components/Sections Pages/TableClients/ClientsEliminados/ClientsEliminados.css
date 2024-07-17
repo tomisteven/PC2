@@ -1,0 +1,16 @@
+.section-clientes-eliminados{
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.btn-volver-clientes{
+    position: relative;
+
+    left: 20px;
+
+}

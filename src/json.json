@@ -1,0 +1,218 @@
+[
+{
+    "_id": "64d8791b50ef823bf9632d42",
+    "name": "Fg Atos Full carbono/Eva soft",
+    "price": 44999,
+    "description": [
+      "Paleta Full Carbono",
+      "Nucleo Eva/Soft",
+      "Intermedios/Avanzados",
+      "Control con potencia",
+      "Peso de 360-375"
+    ],
+    "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/003/411/660/products/whatsapp-image-2023-08-01-at-13-56-231-9193c40218e381097016909104409170-1024-1024.webp",
+    "category": "Fibra de Carbono Evasoft Control Potencia",
+    "formato": [
+      "Diamante"
+    ],
+    "url": "https://padelcrown.com.ar/productos/fg-atos-full-carbono-eva-soft/",
+    "__v": 7,
+    "balance": [
+      "Alto"
+    ],
+    "nucleo": [
+      "Eva/Soft"
+    ],
+    "stock": true
+  },
+  {
+    "_id": "64dc157079bbfa9b970b164f",
+    "name": "Paleta Sin ploteo Full Carbono",
+    "price": 29999,
+    "description": [
+      "Paleta Full Carbono 12k",
+      "Nucleo Foam/Eva",
+      "Intermedios/Profesionales",
+      "Control + potencia",
+      "Peso de 360-375"
+    ],
+    "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/003/411/660/products/whatsapp-image-2023-08-12-at-23-27-251-1eec34ede93b02ebdf16918940765004-1024-1024.webp",
+    "category": "Paleta de Carbono Sin Ploteo Foam Control Potencia",
+    "formato": [
+      "Redonda",
+      "Diamante"
+    ],
+    "nucleo": [
+      "Eva",
+      "Foam"
+    ],
+    "url": "https://padelcrown.com.ar/productos/fg-atos-full-carbono-eva-soft/",
+    "__v": 3,
+    "balance": [
+      "Equilibrado"
+    ],
+    "stock": true
+  },
+  {
+    "_id": "64dc19e1d5720e52def9e5f9",
+    "name": "Paleta Fibra de vidrio sin ploteo",
+    "price": 14999,
+    "description": [
+      "Paleta Fibra de Vidrio",
+      "Nucleo Foam",
+      "Principiantes/Intermedios",
+      "Control + potencia",
+      "Peso de 360-375"
+    ],
+    "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/003/411/660/products/95d77377-4629-4ec2-991e-be8e2595500c1-75be42fe769e03d33616886660386927-1024-1024.webp",
+    "category": "Fibra de Vidrio Sin Ploteo Foam Control Potencia",
+    "formato": [
+      "Redonda",
+      "Diamante",
+      "Gota"
+    ],
+    "nucleo": [
+      "Foam"
+    ],
+    "balance": [
+      "Bajo",
+      "Medio",
+      "Alto"
+    ],
+    "url": "https://padelcrown.com.ar/productos/paletas-fibra-de-vidrio-sin-ploteo/",
+    "__v": 3,
+    "stock": true
+  },
+  {
+    "_id": "64dc1a57d5720e52def9e5fc",
+    "name": "Fg Kripton fibra de vidrio",
+    "price": 34999,
+    "description": [
+      "Paleta Fibra de Vidrio",
+      "Nucleo Foam/Soft",
+      "Principiantes/Intermedios",
+      "Control + potencia",
+      "Peso de 360-375"
+    ],
+    "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/003/411/660/products/whatsapp-image-2023-08-01-at-13-56-221-8134b917dfd7d5e8f416909102652001-1024-1024.webp",
+    "category": "Fibra de Vidrio Foam Control Potencia",
+    "formato": [
+      "Redonda"
+    ],
+    "nucleo": [
+      "Foam/Soft"
+    ],
+    "balance": [
+      "Bajo"
+    ],
+    "url": "https://padelcrown.com.ar/productos/fg-kripton-fibra-de-vidrio-foam/",
+    "__v": 3,
+    "stock": true
+  },
+  {
+    "_id": "64dc1a97d5720e52def9e5fe",
+    "name": "FG HORUS Fibra de vidrio/eva soft",
+    "price": 34999,
+    "description": [
+      "Paleta Fibra de Vidrio",
+      "Nucleo Eva/Soft",
+      "jugadores Intermedios",
+      "Control",
+      "Peso de 360-375"
+    ],
+    "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/003/411/660/products/whatsapp-image-2023-08-01-at-13-56-23-11-7fa509fa622b11264716909102290775-1024-1024.webp",
+    "category": "Fibra de Vidrio Evasoft Control Potencia",
+    "formato": [
+      "Redonda"
+    ],
+    "nucleo": [
+      "Eva/Soft"
+    ],
+    "balance": [
+      "Bajo"
+    ],
+    "url": "https://padelcrown.com.ar/productos/fg-horus-fibra-de-vidrio-eva-soft/",
+    "__v": 3,
+    "stock": true
+  },
+  {
+    "_id": "64dc1b0ad5720e52def9e600",
+    "name": "Fg Isis Eva Soft",
+    "price": 34999,
+    "description": [
+      "Paleta de Carbono",
+      "Nucleo Eva/Soft",
+      "Intermedios/Avanzados",
+      "Control + Potencia",
+      "Peso de 360-375"
+    ],
+    "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/003/411/660/products/4fdc2e6d-a9f5-45b0-8c84-c3c36e0ee8b31-9e0d8e6f8697ccee1416891208491296-1024-1024.webp",
+    "category": "Fibra de Vidrio",
+    "formato": [
+      "Gota"
+    ],
+    "nucleo": [
+      "Eva/Soft"
+    ],
+    "balance": [
+      "Medio",
+      "Alto"
+    ],
+    "url": "https://padelcrown.com.ar/productos/fg-isis-eva-soft/",
+    "__v": 3,
+    "stock": true
+  },
+  {
+    "_id": "64dc1b69d5720e52def9e602",
+    "name": "Fg Onuris Fibra de Vidrio Foam",
+    "price": 34999,
+    "description": [
+      "Paleta Fibra de Vidrio",
+      "Nucleo Foam",
+      "Intermedios/Avanzados",
+      "Control",
+      "Peso de 360-375"
+    ],
+    "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/003/411/660/products/05dcd43c-ada0-4e00-bb82-0da8f8120e361-700f7f16241f7bd03816904091081960-1024-1024.webp",
+    "category": "Fibra de Vidrio",
+    "formato": [
+      "Redonda"
+    ],
+    "nucleo": [
+      "Foam"
+    ],
+    "balance": [
+      "Medio"
+    ],
+    "url": "https://padelcrown.com.ar/productos/fg-onuris-fibra-de-vidrio-foam/",
+    "__v": 3,
+    "stock": true
+  },
+  {
+    "_id": "64dc1bdad5720e52def9e604",
+    "name": "Fg Atos Full Carbono Foam",
+    "price": 39999,
+    "description": [
+      "Paleta Full Carbono",
+      "Nucleo Foam/Soft",
+      "Intermedios/Avanzados",
+      "Control + Potencia",
+      "Peso de 360-375"
+    ],
+    "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/003/411/660/products/208507fc-dd90-4df1-a580-823a709fb98a1-bb7f09adafd407c94916904092050873-1024-1024.webp",
+    "category": "Fibra de Carbono",
+    "formato": [
+      "Diamante"
+    ],
+    "nucleo": [
+      "Foam/Soft"
+    ],
+    "balance": [
+      "Medio",
+      "Alto"
+    ],
+    "url": "https://padelcrown.com.ar/productos/fg-atos-full-carbono-foam/",
+    "__v": 3,
+    "stock": true
+  }
+]

@@ -1,0 +1,33 @@
+.contenedor-revendedores{
+    height: 1000px;
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cont-card-revendedores{
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+}
+.cont-card-revendedores-r{
+    margin-top: 100px;
+    height: 1100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*  */
+.cont-card-revendedores h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}

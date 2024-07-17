@@ -1,0 +1,117 @@
+.cont-seccion-forma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 800px;
+    padding: 2rem 0;
+    background-color: #9ecaff2f;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.options-formas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.option-forma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.option-forma img{
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.li-materiales p{
+  font-size: 1rem;
+}
+
+
+
+
+/* checkbox */
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #30cfd0;
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .cyberpunk-checkbox:before {
+    content: "";
+    background-color: #30cfd0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .cyberpunk-checkbox-label {
+    font-size: 15px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .cont-seccion-forma{
+        width: 96%;
+        height: 100%;
+        padding: 1rem;
+        background-color: #9ecaff2f;
+        border-radius: 14px;
+        margin-bottom: 10px;
+
+        margin-top: -550px;
+    }
+    .options-formas{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .option-forma{
+        width: 85%;
+        height: auto;
+        margin: 15px;
+        margin-bottom: 20px;
+    }
+
+  }

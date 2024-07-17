@@ -1,0 +1,65 @@
+/* Estilos generales */
+.cont-card-revendedores-responsive {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .card-revendedores-responsive {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Estilos para pantallas grandes (desktop) */
+  .card-revendedores-responsive-v {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-revendedores-responsive-v-cont-item {
+    flex: 0 0 30%; /* Ajusta el porcentaje según tus necesidades */
+    padding: 10px;
+    background-color: rgba(127, 185, 255, 0.449);
+    margin: 5px;
+    border-radius: 10px
+
+}
+.span-card{
+    font-weight: bold;
+    color: black;
+}
+
+  .card-revendedores-responsive-v-cont-item h5 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .card-revendedores-responsive-v-cont-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Estilos para tabletas */
+  @media (max-width: 768px) {
+    .cont-card-revendedores-responsive{
+        height: 1000px;
+    }
+    .card-revendedores-responsive-v-cont-item {
+      flex: 0 0 48%; /* Ajusta el porcentaje según tus necesidades */
+    }
+  }
+
+  /* Estilos para teléfonos móviles */
+  @media (max-width: 480px) {
+    .cont-card-revendedores-responsive{
+        height: 1000px;
+    }
+    .card-revendedores-responsive-v-cont-item {
+      flex: 0 0 100%;
+    }
+  }

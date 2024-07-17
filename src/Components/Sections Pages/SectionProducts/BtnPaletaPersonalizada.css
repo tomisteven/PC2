@@ -1,0 +1,62 @@
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #00c27e;
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    margin: 20px;
+    width: auto;
+    height: 40px;
+  }
+
+  .btn:hover {
+    opacity: .95;
+  }
+
+  .btn .animation {
+    border-radius: 100%;
+    animation: ripple 2s linear infinite;
+  }
+
+  /* @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.267), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.287);
+    }
+
+
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.445), 0 0 0 40px rgba(255, 255, 255, 0.351), 0 0 0 60px rgba(255, 255, 255, 0.497), 0 0 0 80px rgba(255, 255, 255, 0.314);
+    }
+  } */
+
+  /* responsivo */
+
+  @media screen and (max-width: 767px){
+    .btn{
+      z-index: 1000;
+      top: 91%;
+      height: 30px;
+      right: 0;
+
+      left: 0px;
+    }
+  }
