@@ -3,6 +3,7 @@ import "./Login.css";
 import { Icon } from "semantic-ui-react";
 import LoadingCobros from "./LoadingCobros.js";
 import { CobrosAPI } from "../../../../api/Cobros.js";
+import url from "../../../../config.js";
 
 const cobrosController = new CobrosAPI();
 export default function Login({ state, valor }) {
@@ -26,7 +27,7 @@ export default function Login({ state, valor }) {
   const verificarUsernameRepetido = async (e) => {
     e.preventDefault();
     const users = await fetch(
-      "https://paderlcrown-server.onrender.com/admin/cobros"
+      url + "/admin/cobros"
     );
     const usersData = await users.json();
     const user = usersData.find((item) => item.username === e.target.value);

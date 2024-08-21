@@ -6,7 +6,8 @@
   margin-top: 30px;
   width: 100%;
 }
-.cont-nueva-financiacion h3, .p-financiacion {
+.cont-nueva-financiacion h3,
+.p-financiacion {
   margin-bottom: 20px;
   width: 900px;
   text-align: center;
@@ -130,4 +131,55 @@
 .simulacion-financiacion-cuotas .cuota span {
   font-weight: bold;
   color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .cont-nueva-financiacion h3,
+  .p-financiacion {
+    width: 98%;
+  }
+  .dropdown-productos {
+    width: 95%;
+  }
+  .cont-botones-financiacion {
+    width: 95%;
+  }
+  .simulacro-financiacion {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont-simulacro-cuotas {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .simulacion-financiacion-cuotas {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .simulacion-financiacion-cuotas h6 {
+    font-size: 14px;
+  }
+  .simulacion-financiacion-cuotas div {
+    font-size: 12px;
+  }
+  .simulacion-financiacion-cuotas .cuota {
+    padding: 5px 0;
+  }
+  .info-cuota-simulacro {
+    font-size: 10px;
+  }
+  .simulacion-financiacion-cuotas .cuota span {
+    font-size: 14px;
+  }
+
+  .cont-nueva-financiacion {
+    width: 95%;
+  }
 }

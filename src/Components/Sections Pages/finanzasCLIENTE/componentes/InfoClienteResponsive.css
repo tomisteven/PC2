@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+  .cont-table-cuotas-pagar {
+    width: 100%;
+  }
+
+  .cont-info-financiacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cont-info-financiacion h3 {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .table-cuotas-pagar {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+  }
+
+  .btn-crear-pago {
+    width: 150px;
+    height: 35px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .strong-info-activas {
+    font-size: 15px;
+    border-bottom: 1px solid black;
+  }
+}

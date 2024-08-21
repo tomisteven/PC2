@@ -17,6 +17,7 @@ import {
   ModalActions,
 } from "semantic-ui-react";
 import swal from "sweetalert";
+import "./InfoClienteResponsive.css";
 
 const cobrosController = new CobrosAPI();
 export default function InfoCliente({
@@ -124,8 +125,8 @@ export default function InfoCliente({
               marginTop: "20px",
             }}
           >
-            <TableHeader>
-              <TableRow>
+            <TableHeader className="table-row-activas">
+              <TableRow >
                 <TableHeaderCell>Numero de Cuota</TableHeaderCell>
                 <TableHeaderCell>Fecha de Vencimiento</TableHeaderCell>
                 <TableHeaderCell>Monto</TableHeaderCell>
@@ -137,11 +138,11 @@ export default function InfoCliente({
               {cliente.cuotas &&
                 cliente.cuotasAPagar.map((cuota) => (
                   <TableRow>
-                    <TableCell>{cuota.cuota || "No especificado"}</TableCell>
-                    <TableCell>{acomodarFecha(cuota.fechaPago)}</TableCell>
-                    <TableCell>$ {cuota.valor || "No especificado"}</TableCell>
+                    <TableCell><strong className="strong-info-activas">Cuota: </strong>{cuota.cuota || "No especificado"}</TableCell>
+                    <TableCell><strong className="strong-info-activas">Vencimiento: </strong>{acomodarFecha(cuota.fechaPago)}</TableCell>
+                    <TableCell><strong className="strong-info-activas">Valor: </strong> $ {cuota.valor || "No especificado"}</TableCell>
                     <TableCell>
-                      {cuota.estado === true ? "PAGO RECIBIDO" : "PENDIENTE"}
+                    <strong className="strong-info-activas">Estado: </strong> {cuota.estado === true ? "PAGO RECIBIDO" : "PENDIENTE"}
                     </TableCell>
                     <TableCell className="cont-actions-table">
                       <Button

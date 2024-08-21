@@ -6,6 +6,7 @@ import {
   Icon,
 } from "semantic-ui-react";
 import "./CondicionesFinanciacion.css";
+import "./CondicionesFinanciacionResponsive.css";
 
 export default function CondicionesFinanciacion() {
   const [activeIndex, setActiveIndex] = React.useState({ activeIndex: 0 });

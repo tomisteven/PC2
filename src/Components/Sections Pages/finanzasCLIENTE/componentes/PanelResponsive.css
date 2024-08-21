@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+  .panel-financiero-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .panel-left {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    height: 100%;
+  }
+  .panel-right {
+    width: 100%;
+    height: 100%;
+
+    padding-bottom: 50px;
+    margin-top: 0;
+  }
+  .info-padel-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .btn-panel-left {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logout-btn {
+    position: fixed;
+    bottom: 11px;
+    right: 15px;
+    width: 100px;
+  }
+  .panel-right-info-cliente {
+    display: none;
+  }
+  .btn-whatsapp-rigth {
+    bottom: 55px;
+  }
+}

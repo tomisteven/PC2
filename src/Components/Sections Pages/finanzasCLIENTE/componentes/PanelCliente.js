@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import url from "../../../../config";
 import "./PanelCliente.css";
+import "./PanelResponsive.css"
 import PanelLeft from "./PanelLeft.js";
 import PanelRight from "./PanelRight.js";
 

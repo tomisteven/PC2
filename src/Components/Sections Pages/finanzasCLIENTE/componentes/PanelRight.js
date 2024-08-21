@@ -114,6 +114,7 @@ export default function PanelRight({
           </>
         )}
 
+      </div>
         <Button
           className="btn-whatsapp-rigth"
           color="green"
@@ -121,7 +122,6 @@ export default function PanelRight({
           icon="whatsapp"
           size="big"
         />
-      </div>
 
       <Routes className="router-links">
         <Route path="/" element={<CondicionesFinanciacion />} />

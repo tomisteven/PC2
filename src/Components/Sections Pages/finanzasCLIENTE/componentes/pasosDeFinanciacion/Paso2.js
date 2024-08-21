@@ -36,7 +36,7 @@ export default function Paso2({ handleTipoFinanciacionChange, paso, setPaso }) {
         className="dropdown-productos"
         placeholder="Seleccionar Tipo de financiación!"
         selection
-        search
+
         options={tipoFinanciacion}
         onChange={handleTipoFinanciacionChange}
       />

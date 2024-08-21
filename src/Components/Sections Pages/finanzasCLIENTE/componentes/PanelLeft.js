@@ -144,6 +144,12 @@ export default function PanelLeft() {
         }}
         className="logout-btn"
       >
+        <Icon
+            className="icon-button-left"
+            name="logout"
+            size="big"
+            color="white"
+          />
         Logout
       </button>
     </div>
