@@ -2,7 +2,7 @@ import url from '../config.js';
 
 export class CobrosAPI {
 
-  url =  url + "cobros/";
+  url =  url + "/cobros/";
 
 
   async registrarCliente({ username, nombre, dni, email, password }) {
