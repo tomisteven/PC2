@@ -31,39 +31,6 @@ export default function SeguimientoPedido() {
     setDni("");
   };
 
-  /* function formatearFecha(fechaString) {
-    console.log(fechaString);
-    if (!fechaString) return "No hay Fecha";
-    // Intenta parsear la fecha en formato "dd/mm/aaaa"
-    var formatoDDMMYYYY = /^\d{2}\/\d{2}\/\d{4}$/;
-    var formatoDDMMYYYY2 = /^\d{2}\/\d{2}\/\d{4}$/;
-    if (
-      formatoDDMMYYYY.test(fechaString) ||
-      formatoDDMMYYYY2.test(fechaString)
-    ) {
-      return fechaString;
-    }
-    // Intenta parsear la fecha en formato predeterminado
-    var fechaPredeterminada = new Date(fechaString);
-    if (!isNaN(fechaPredeterminada.getDate())) {
-      var diaPredeterminado = fechaPredeterminada.getDate();
-      var mesPredeterminado = fechaPredeterminada.getMonth() + 1; // Se suma 1 porque los meses van de 0 a 11 en JavaScript
-      var anioPredeterminado = fechaPredeterminada.getFullYear();
-      console.log(diaPredeterminado, mesPredeterminado, anioPredeterminado);
-      return (
-        diaPredeterminado +
-        "/" +
-        (mesPredeterminado < 10 ? "0" : "") +
-        mesPredeterminado +
-        "/" +
-        anioPredeterminado
-      );
-    }
-
-    // Si no se pudo parsear en ninguno de los formatos, devuelve null
-    return null;
-  } */
-
   return (
     <div className="cont-seguimiento">
       <h1>Seguimiento de pedido</h1>
@@ -106,7 +73,11 @@ export default function SeguimientoPedido() {
                 <div className="seguimiento-url">
                   Link Seguimiento Andreani:{" "}
                   {p.linkSeguimiento ? (
-                    <a href={p.linkSeguimiento} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={p.linkSeguimiento}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Ver Seguimiento
                     </a>
                   ) : (

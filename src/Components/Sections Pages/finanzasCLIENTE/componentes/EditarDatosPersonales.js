@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import LoadingCobros from "./LoadingCobros";
 import { CobrosAPI } from "../../../../api/Cobros";
 import "./EditarDatosPersonales.css";
+import url from "../../../../config";
 
 const cobrosController = new CobrosAPI();
 export default function EditarDatosPersonales({
@@ -16,9 +17,7 @@ export default function EditarDatosPersonales({
     //setLoading(true);
     const user = JSON.parse(localStorage.getItem("usuarioFinanciero"));
     const fetchData = async () => {
-      const data = await fetch(
-        "https://paderlcrown-server.onrender.com/cobros/" + user._id
-      );
+      const data = await fetch(url + "/cobros/" + user._id);
       const dataJson = await data.json();
       setClient(dataJson);
     };

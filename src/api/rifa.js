@@ -1,10 +1,8 @@
+import  url  from "../config.js";
+
 export class RifaAPI {
-
-
   production = true;
-  url = this.production
-    ? "https://paderlcrown-server.onrender.com"
-    : "http://localhost:8080";
+  url = this.production ? url : "http://localhost:8080";
 
   async createPayment(body) {
     console.log(body);
@@ -53,7 +51,6 @@ export class RifaAPI {
     return response.json();
   }
 
-
   async editRifa(rifa) {
     const response = await fetch(this.url + "/rifa/edit/" + rifa._id, {
       method: "PATCH",
@@ -64,6 +61,4 @@ export class RifaAPI {
     });
     return response.json();
   }
-
-
 }

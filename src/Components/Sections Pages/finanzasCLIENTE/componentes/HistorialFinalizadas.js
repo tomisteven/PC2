@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./HistorialFinalizadas.css";
 import LoadingCobros from "./LoadingCobros";
+import url from "../../../../config";
 
 export default function HistorialFinalizadas() {
   const [client, setClient] = React.useState({});
@@ -11,7 +12,7 @@ export default function HistorialFinalizadas() {
     const user = JSON.parse(localStorage.getItem("usuarioFinanciero"));
     const fetchData = async () => {
       const data = await fetch(
-        "https://paderlcrown-server.onrender.com/cobros/" + user._id
+        url + "/cobros/" + user._id
       );
       const dataJson = await data.json();
       setClient(dataJson);

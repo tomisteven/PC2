@@ -3,13 +3,13 @@ import { Routes, Route } from "react-router-dom";
 import InfoCliente from "./InfoCliente.js";
 import { Label, LabelDetail, Button, Icon } from "semantic-ui-react";
 import CondicionesFinanciacion from "./CondicionesFinanciacion.js";
-/* import FinanciacionCancelada from "./FinanciacionCancelada.js"; */
 import HistorialFinalizadas from "./HistorialFinalizadas.js";
 import NuevaFinanciacion from "./NuevaFinanciacion.js";
 import HistorialPagos from "./HistorialPagos.js";
 import EditarDatosPersonales from "./EditarDatosPersonales.js";
 import { useEffect } from "react";
 import LoadingCobros from "./LoadingCobros.js";
+import url from "../../../../config.js";
 
 export default function PanelRight({
   setStateLocalStorage,
@@ -23,9 +23,7 @@ export default function PanelRight({
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("usuarioFinanciero"));
     const fetchData = async () => {
-      const data = await fetch(
-        "https://paderlcrown-server.onrender.com/cobros/" + user._id
-      );
+      const data = await fetch(url + "/cobros/" + user._id);
       const dataJson = await data.json();
       setClient(dataJson);
       localStorage.removeItem("usuarioFinanciero");
@@ -34,7 +32,6 @@ export default function PanelRight({
     fetchData();
 
     setLoading(false);
-    //console.log("Actualizando datos de usuario en PanelRight");
   }, [stateLocalStorage]);
 
   if (!user.confirmadoPorAdministracion) {

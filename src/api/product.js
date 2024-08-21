@@ -1,6 +1,8 @@
+import url from '../config.js';
+
 export class Product {
 
-     url = "https://paderlcrown-server.onrender.com/"
+     url = url
      urlLocal = "http://localhost:8080/"
 
     async getProducts() {

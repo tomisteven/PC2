@@ -1,7 +1,9 @@
+import url from '../config.js';
+
 export class Client {
   production = true;
   url = this.production
-    ? "https://paderlcrown-server.onrender.com"
+    ? url
     : "http://localhost:8080";
 
   /* "https://padelcrown-server-dev-jepe.3.us-1.fl0.io" */

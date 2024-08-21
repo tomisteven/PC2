@@ -1,6 +1,8 @@
+import url from '../config.js';
+
 export class CobrosAPI {
 
-  url = "https://paderlcrown-server.onrender.com/cobros/";
+  url =  url + "cobros/";
 
 
   async registrarCliente({ username, nombre, dni, email, password }) {
