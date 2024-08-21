@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Table } from "semantic-ui-react";
 import "./HistorialPagos.css";
 import LoadingCobros from "./LoadingCobros";
+import url from "../../../../config";
 
 export default function HistorialPagos() {
   const [loading, setLoading] = useState(false);
@@ -11,7 +12,7 @@ export default function HistorialPagos() {
     const user = JSON.parse(localStorage.getItem("usuarioFinanciero"));
     const fetchData = async () => {
       const data = await fetch(
-        "https://paderlcrown-server.onrender.com/cobros/" + user._id
+        url + "/cobros/" + user._id
       );
       const dataJson = await data.json();
       setClient(dataJson);
