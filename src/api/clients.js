@@ -1,7 +1,7 @@
 export class Client {
   production = true;
   url = this.production
-    ? "https://particular-bernita-digitalcode.koyeb.app"
+    ? "https://paderlcrown-server.onrender.com"
     : "http://localhost:8080";
 
   /* "https://padelcrown-server-dev-jepe.3.us-1.fl0.io" */
@@ -149,7 +149,7 @@ export class Client {
       },
     });
     const data = await res.json();
-    return { data: data, status: res.status};
+    return { data: data, status: res.status };
   }
 
   async addComentario(id, comentario) {

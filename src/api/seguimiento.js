@@ -1,6 +1,6 @@
 export class Seguimiento{
 
-    url = "https://particular-bernita-digitalcode.koyeb.app"
+    url = "https://paderlcrown-server.onrender.com"
     local = "http://localhost:8080"
 
     async findClients(dni){

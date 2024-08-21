@@ -1,0 +1,278 @@
+.panel-financiero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.panel-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 19%;
+  padding-top: 120px;
+
+  background-color: rgba(74, 100, 74, 0.66);
+}
+
+.panel-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 100%;
+  width: 81%;
+  background-color: rgba(88, 194, 88, 0.209);
+}
+
+.btn-panel-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 35px;
+  width: 100%;
+  background-color: #6dbd79;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.icon-button-left {
+  position: relative;
+}
+
+.panel-right-info-cliente {
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 10%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.316);
+}
+
+
+
+
+.cont-table-cuotas-pagar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.table-cuotas-pagar {
+  width: 1000px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cont-info-financiacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.info-producto {
+  background-color: #6dbd79;
+  color: white;
+  font-weight: 500;
+
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 15px;
+  width: 200px;
+  text-align: center;
+}
+.cell-pago{
+  width: 230px;
+
+}
+.btn-crear-pago {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 60%;
+  background-color: #caac00;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.logout-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border-radius: 25px;
+
+  width: 200px;
+  background-color: #e94c4c;
+  margin: auto;
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.info-transferencia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.316);
+}
+.modal-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+
+  height: 100%;
+}
+
+.modal-header {
+  background-color: #30843d;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+}
+.modal-header h5 {
+  font-size: 20px;
+  margin: auto;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 600;
+}
+
+.modal-info-p {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(13, 85, 13);
+}
+
+.span-modal {
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+}
+
+.btn-copiar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 50px;
+  background-color: #6dbd79;
+  margin: auto;
+  border: none;
+
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  position: relative;
+  left: 10px;
+}
+
+.modal-description h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  width: 700px;
+}
+.p-cuota-valor {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  background-color: #6dbd797b;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+.p-cuota-motivo {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  background-color: #6da5bd7b;
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.cont-actions-table {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cont-table-cuotas-pagar h1{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: #00510c2e;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.btn-whatsapp-rigth{
+  position: fixed;
+  right: 10px;
+  bottom: 10px
+}

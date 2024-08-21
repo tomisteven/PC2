@@ -1,0 +1,166 @@
+.login-container {
+  background-image: url("../../../../assets/imglogin.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 20px;
+  border-radius: 10px;
+position: relative;
+top: -90px;
+
+  height: auto;
+  width: 300px;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.12);
+
+  padding: 20px;
+  border-radius: 10px;
+
+  height: auto;
+  width: 300px;
+}
+
+.login-title,
+.register-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.register-form,
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.register-form input,
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.icons-socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+
+.icons-socials .i-socials {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.login-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.164);
+  border-radius: 10px;
+
+  padding: 10px;
+}
+
+.login-footer h5 {
+  text-align: center;
+  height: 100%;
+  position: relative;
+
+  top: 5px;
+
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.iniciar-sesion-footer {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(20, 93, 30);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.error-user{
+    color: rgb(0, 122, 171);
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.879);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.error-password{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(255, 187, 187, 0.879);
+    padding: 5px;
+    border-radius: 5px;
+
+}

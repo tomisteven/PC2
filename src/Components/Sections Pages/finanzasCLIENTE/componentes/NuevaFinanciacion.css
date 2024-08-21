@@ -1,0 +1,133 @@
+.cont-nueva-financiacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+.cont-nueva-financiacion h3, .p-financiacion {
+  margin-bottom: 20px;
+  width: 900px;
+  text-align: center;
+}
+.cont-botones-financiacion {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.dropdown-productos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 900px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-productos .image {
+  width: 100px;
+  height: 100px;
+}
+
+.btn-nueva-financiacion {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-nueva-financiacion-atras {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(255, 94, 0, 0.705);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.simulacro-financiacion {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.213);
+  font-family: "Arial", sans-serif;
+
+  width: 900px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.title-simulacro {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.cont-simulacro-cuotas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+}
+.title-cuota {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.simulacion-financiacion-cuotas {
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffffd8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.simulacion-financiacion-cuotas h6 {
+  font-size: 15px;
+  margin-bottom: 3px;
+  color: #555;
+}
+
+.simulacion-financiacion-cuotas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.simulacion-financiacion-cuotas div {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.simulacion-financiacion-cuotas div:last-child {
+  margin-bottom: 0;
+}
+
+.simulacion-financiacion-cuotas .cuota {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.info-cuota-simulacro {
+  font-size: 11px;
+}
+.simulacion-financiacion-cuotas .cuota:last-child {
+  border-bottom: none;
+}
+
+.simulacion-financiacion-cuotas .cuota span {
+  font-weight: bold;
+  color: #000;
+}

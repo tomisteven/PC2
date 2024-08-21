@@ -1,0 +1,23 @@
+.cont-list-condiciones {
+  display: flex;
+  flex-direction: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
+
+.cont-list-condiciones h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 10px;
+  background-color: rgba(0, 128, 0, 0.158);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}

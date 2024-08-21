@@ -1,6 +1,6 @@
 export class Product {
 
-     url = "https://particular-bernita-digitalcode.koyeb.app/"
+     url = "https://paderlcrown-server.onrender.com/"
      urlLocal = "http://localhost:8080/"
 
     async getProducts() {

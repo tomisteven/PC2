@@ -3,7 +3,7 @@ export class RifaAPI {
 
   production = true;
   url = this.production
-    ? "https://particular-bernita-digitalcode.koyeb.app"
+    ? "https://paderlcrown-server.onrender.com"
     : "http://localhost:8080";
 
   async createPayment(body) {
