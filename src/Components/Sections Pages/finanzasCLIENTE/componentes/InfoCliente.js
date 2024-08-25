@@ -126,7 +126,7 @@ export default function InfoCliente({
             }}
           >
             <TableHeader className="table-row-activas">
-              <TableRow >
+              <TableRow>
                 <TableHeaderCell>Numero de Cuota</TableHeaderCell>
                 <TableHeaderCell>Fecha de Vencimiento</TableHeaderCell>
                 <TableHeaderCell>Monto</TableHeaderCell>
@@ -138,11 +138,23 @@ export default function InfoCliente({
               {cliente.cuotas &&
                 cliente.cuotasAPagar.map((cuota) => (
                   <TableRow>
-                    <TableCell><strong className="strong-info-activas">Cuota: </strong>{cuota.cuota || "No especificado"}</TableCell>
-                    <TableCell><strong className="strong-info-activas">Vencimiento: </strong>{acomodarFecha(cuota.fechaPago)}</TableCell>
-                    <TableCell><strong className="strong-info-activas">Valor: </strong> $ {cuota.valor || "No especificado"}</TableCell>
                     <TableCell>
-                    <strong className="strong-info-activas">Estado: </strong> {cuota.estado === true ? "PAGO RECIBIDO" : "PENDIENTE"}
+                      <strong className="strong-info-activas">Cuota: </strong>
+                      {cuota.cuota || "No especificado"}
+                    </TableCell>
+                    <TableCell>
+                      <strong className="strong-info-activas">
+                        Vencimiento:{" "}
+                      </strong>
+                      {acomodarFecha(cuota.fechaPago)}
+                    </TableCell>
+                    <TableCell>
+                      <strong className="strong-info-activas">Valor: </strong> ${" "}
+                      {cuota.valor || "No especificado"}
+                    </TableCell>
+                    <TableCell>
+                      <strong className="strong-info-activas">Estado: </strong>{" "}
+                      {cuota.estado === true ? "PAGO RECIBIDO" : "PENDIENTE"}
                     </TableCell>
                     <TableCell className="cont-actions-table">
                       <Button
@@ -166,7 +178,11 @@ export default function InfoCliente({
                           )
                         }
                         style={
-                          cuota.estado === "Pendiente de Aprobación"
+                          cuota.pagada
+                            ? { backgroundColor: "green" }
+                            : cuota.estado === "Rechazado"
+                            ? { backgroundColor: "red" }
+                            : cuota.estado === "Pendiente de Aprobación"
                             ? {
                                 backgroundColor: "green",
                                 opacity: 0.5,

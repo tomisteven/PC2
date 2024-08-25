@@ -19,6 +19,8 @@ import Rifas from "./Components/Sections Pages/Rifas/Rifas.js";
 import AdminRifas from "./Components/Sections Pages/TableClients/AdminRifas/AdminRifas.js";
 import EditRifa from "./Components/Sections Pages/TableClients/AdminRifas/ModalEditar.js";
 import Finanzas from "./Components/Sections Pages/finanzasCLIENTE/Finanzas.js";
+import FinanzasAdmin from "./Components/Sections Pages/finanzasADMIN/FinanzasAdmin.js";
+import FinanzasAdminCLIENTE from "./Components/Sections Pages/finanzasADMIN/FinanzasAdminCLIENTE.js";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/rifas" element={<Rifas />} />
         <Route path="/admin/rifas" element={<AdminRifas />} />
+        <Route path="/admin/cobros/5423456756/" element={<FinanzasAdmin />} />
+        <Route path="/admin/cobros/5423456756/:id" element={<FinanzasAdminCLIENTE />} />
         <Route path="/admin/rifas/edit/:id" element={<EditRifa />} />
         <Route path="/revendedores" element={<Revendedores />} />
         <Route path="/cobros-online/*" element={<Finanzas />} exact />
