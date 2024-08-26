@@ -15,6 +15,19 @@ export class CobrosAPI {
     return data;
   }
 
+  async confirmarCliente(id) {
+    const response = await fetch(this.url + `editar/${id}`, {
+      method: "PATCH",
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ estadoActual : true, confirmadoPorAdministracion: true }),
+    });
+    const data = await response.json();
+    return data;
+  }
+
   async loginClient({ username, password }) {
     const response = await fetch(this.url + "cliente/login", {
       method: "POST",

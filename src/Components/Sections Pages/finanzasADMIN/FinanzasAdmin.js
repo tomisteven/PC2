@@ -2,20 +2,58 @@ import React from "react";
 import "./FinanzasAdmin.css";
 import url from "../../../config";
 import { Table, Button } from "semantic-ui-react";
+import { CobrosAPI } from "../../../api/Cobros";
+import LoadingCobros from "../finanzasCLIENTE/componentes/LoadingCobros";
+import swal from "sweetalert";
 
+const client = new CobrosAPI();
 export default function FinanzasAdmin() {
   const [data, setData] = React.useState({});
   let user = JSON.parse(localStorage.getItem("user"));
+  const [state, setState] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+
+  const changeState = () => {
+    setState(!state);
+  };
 
   React.useEffect(() => {
     async function fetchData() {
+      setLoading(true);
       const response = await fetch(url + "/admin/cobros");
       const json = await response.json();
       setData(json);
+      setLoading(false);
     }
 
     fetchData();
-  }, []);
+  }, [state]);
+
+  const confirmarCliente = async (id) => {
+    swal({
+      title: "Estas seguro de confirmar este cliente?",
+      text: "Una vez confirmado no podras deshacer esta acción",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then(async (willDelete) => {
+      if (willDelete) {
+        const response = await client.confirmarCliente(id);
+        if (response.ok) {
+          swal("Cliente confirmado correctamente", {
+            icon: "success",
+          });
+          changeState();
+        } else {
+          swal("Error al confirmar el cliente", {
+            icon: "error",
+          });
+        }
+      } else {
+        swal("No se confirmo el cliente");
+      }
+    });
+  };
 
   const onChangeAndVerifyThePassword = (e) => {
     console.log(e.target.value);
@@ -25,6 +63,14 @@ export default function FinanzasAdmin() {
       window.location.reload();
     }
   };
+
+  if (loading) {
+    return (
+      <div className="finanzas-admin-cont">
+        <LoadingCobros />
+      </div>
+    );
+  }
 
   return (
     <div className="finanzas-admin-cont">
@@ -66,13 +112,22 @@ export default function FinanzasAdmin() {
                       {item.pagando ? "Pagando" : "Sin Iniciar"}
                     </Table.Cell>
                     <Table.Cell>
-                      {item.confirmadoPorAdministracion
-                        ? "Confirmado"
-                        : "Confirmar Cliente"}
+                      {item.confirmadoPorAdministracion ? (
+                        "Confirmado"
+                      ) : (
+                        <Button
+                          color="blue"
+                          onClick={() => {
+                            confirmarCliente(item._id);
+                          }}
+                        >
+                          CONFIRMAR
+                        </Button>
+                      )}
                     </Table.Cell>
                     <Table.Cell>
                       <Button
-                      color="green"
+                        color="green"
                         onClick={() => {
                           window.location.href = `/admin/cobros/5423456756/${item._id}`;
                         }}
