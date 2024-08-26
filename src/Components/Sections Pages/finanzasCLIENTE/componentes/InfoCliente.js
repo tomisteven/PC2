@@ -153,8 +153,8 @@ export default function InfoCliente({
                       {cuota.valor || "No especificado"}
                     </TableCell>
                     <TableCell>
-                      <strong className="strong-info-activas">Estado: </strong>{" "}
-                      {cuota.estado === true ? "PAGO RECIBIDO" : "PENDIENTE"}
+                      <strong className="strong-info-activas"> </strong>{" "}
+                      {cuota.estado === "Aprobado" ? "PAGO RECIBIDO" : "PENDIENTE"}
                     </TableCell>
                     <TableCell className="cont-actions-table">
                       <Button
@@ -168,7 +168,7 @@ export default function InfoCliente({
                         Datos de Cuenta
                       </Button>
                       <button
-                        disabled={cuota.estado === "Pendiente de Aprobación"}
+                        disabled={cuota.estado === "Pendiente de Aprobación" || cuota.estado === "Aprobado" }
                         className="btn-crear-pago"
                         onClick={() =>
                           confirmarNuevoPago(

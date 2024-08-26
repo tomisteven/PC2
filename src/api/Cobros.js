@@ -22,7 +22,7 @@ export class CobrosAPI {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ estadoActual : true, confirmadoPorAdministracion: true }),
+      body: JSON.stringify({confirmadoPorAdministracion: true }),
     });
     const data = await response.json();
     return data;
