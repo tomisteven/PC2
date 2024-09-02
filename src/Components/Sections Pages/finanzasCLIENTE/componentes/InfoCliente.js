@@ -17,6 +17,7 @@ import {
   ModalActions,
 } from "semantic-ui-react";
 import swal from "sweetalert";
+
 import "./InfoClienteResponsive.css";
 
 const cobrosController = new CobrosAPI();
@@ -50,7 +51,9 @@ export default function InfoCliente({
 
   const confirmarNuevoPago = async (idCliente, idCuota, producto) => {
     swal({
-      title: "Estas seguro?",
+      title: `Estas seguro? Verifica los datos de la cuenta en la ventana "Datos de Cuenta"`,
+      showDenyButton: true,
+
       text: "Una vez confirmado tu pago te notificaremos si se aprobo o no!",
       icon: "warning",
       buttons: true,
@@ -154,7 +157,9 @@ export default function InfoCliente({
                     </TableCell>
                     <TableCell>
                       <strong className="strong-info-activas"> </strong>{" "}
-                      {cuota.estado === "Aprobado" ? "PAGO RECIBIDO" : "PENDIENTE"}
+                      {cuota.estado === "Aprobado"
+                        ? "PAGO RECIBIDO"
+                        : "PENDIENTE"}
                     </TableCell>
                     <TableCell className="cont-actions-table">
                       <Button
@@ -168,7 +173,10 @@ export default function InfoCliente({
                         Datos de Cuenta
                       </Button>
                       <button
-                        disabled={cuota.estado === "Pendiente de Aprobación" || cuota.estado === "Aprobado" }
+                        disabled={
+                          cuota.estado === "Pendiente de Aprobación" ||
+                          cuota.estado === "Aprobado"
+                        }
                         className="btn-crear-pago"
                         onClick={() =>
                           confirmarNuevoPago(
@@ -222,25 +230,26 @@ export default function InfoCliente({
                   Transferi el valor de tu cuota a la siguiente cuenta:
                 </p>
                 <p>
-                  BANCO: <span className="span-modal">Banco Nacion</span>
+                  BANCO: <span className="span-modal">Mercado Pago</span>
                 </p>
                 <p>
                   Nombre de la cuenta:{" "}
-                  <span className="span-modal">Facundo agustin ayala</span>
+                  <span className="span-modal">
+                    Facundo agustin ayala O Padel Crown
+                  </span>
                 </p>
                 <p>
                   ALIAS:{" "}
                   <span className="span-modal" id="textoacopiar">
-                    Padelcrown23
+                    Padelcrown1
                   </span>
                   <Button color="gray" icon="copy" className="btn-copiar" />
                 </p>
                 <p>
-                  CBU: <span className="span-modal">123456789</span>
+                  CVU:{" "}
+                  <span className="span-modal">0000003100091207324442</span>
                 </p>
-                <p>
-                  CUIT: <span className="span-modal">123456789</span>
-                </p>
+
                 <h4>
                   Una vez transferido el dinero, aguardar confirmacion de
                   recepcion por parte de la administracion de padelcrown, una

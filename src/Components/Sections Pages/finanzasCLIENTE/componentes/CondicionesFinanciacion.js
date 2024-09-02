@@ -20,9 +20,7 @@ export default function CondicionesFinanciacion() {
 
   return (
     <div className="cont-list-condiciones">
-        <h5>
-            Condiciones de Financiacion de Padel Crown
-        </h5>
+      <h5>Condiciones de Financiacion de Padel Crown</h5>
       <Accordion styled fluid className="acordeon-cont">
         <AccordionTitle
           active={activeIndex === 0}
@@ -153,11 +151,18 @@ export default function CondicionesFinanciacion() {
         </AccordionTitle>
         <AccordionContent active={activeIndex === 6}>
           <p>
-            Una vez abonada la segunda cuota de la financiacion, se podra dar de
-            baja la financiacion pero no se le devolvera el dinero abonado hasta
-            el momento. Si no abono la segunda cuota de la financiacion, se le
-            cancelara el plan de financiacion y se le devolvera el dinero
-            abonado de la primera cuota.
+            Si después de haber pagado el 60% del producto no abonás las últimas
+            cuotas, se aplicarán penalizaciones por incumplimiento y se cobrarán
+            intereses sobre el monto pendiente. Además, podríamos reportar el
+            impago a las agencias de crédito, lo que afectará tu historial
+            crediticio. Si persiste la falta de pago, podríamos iniciar un
+            proceso de reclamación para recuperar el saldo adeudado, lo que
+            podría incluir acciones legales y costos adicionales. En algunos
+            casos, podríamos exigir la devolución del producto entregado. Te
+            recomendamos comunicarte con nosotros si tenés dificultades para
+            abonar, para que podamos ofrecerte opciones como reestructuración de
+            deuda o extensión de plazos. Nuestro objetivo es ayudarte a
+            completar tu compra de manera satisfactoria.
           </p>
         </AccordionContent>
       </Accordion>
