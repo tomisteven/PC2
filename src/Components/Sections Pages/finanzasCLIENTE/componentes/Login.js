@@ -26,9 +26,7 @@ export default function Login({ state, valor }) {
 
   const verificarUsernameRepetido = async (e) => {
     e.preventDefault();
-    const users = await fetch(
-      url + "/admin/cobros"
-    );
+    const users = await fetch(url + "/admin/cobros");
     const usersData = await users.json();
     const user = usersData.find((item) => item.username === e.target.value);
 
@@ -58,6 +56,19 @@ export default function Login({ state, valor }) {
       setErrorPassword("Las contraseñas no coinciden");
       return;
     }
+    if (
+      formRegister.username === "" ||
+      formRegister.nombre === "" ||
+      formRegister.dni === "" ||
+      formRegister.email === "" ||
+      formRegister.password === "" ||
+      formRegister.confirmPassword === ""
+    ) {
+      setErrorPassword("Complete todos los campos");
+      alert("Complete todos los campos");
+      return;
+    }
+
     setLoading(true);
     const response = await cobrosController.registrarCliente({
       username: formRegister.username,
@@ -122,6 +133,7 @@ export default function Login({ state, valor }) {
               </div>
               <div className="login-form">
                 <input
+                  required
                   type="text"
                   placeholder="Correo"
                   onChange={(e) =>
@@ -129,6 +141,7 @@ export default function Login({ state, valor }) {
                   }
                 />
                 <input
+                  required
                   type="text"
                   placeholder="Contraseña"
                   onChange={(e) =>
@@ -180,6 +193,7 @@ export default function Login({ state, valor }) {
           </div>
           <div class="register-form">
             <input
+              required
               type="text"
               placeholder="Usuario"
               onChange={(e) => verificarUsernameRepetido(e)}
@@ -188,30 +202,35 @@ export default function Login({ state, valor }) {
               {errorUsername ? textUsername : "Usuario diponible"}
             </p>
             <input
+              required
               type="text"
               placeholder="Nombre"
               name="nombre"
               onChange={(e) => handleChangeRegister(e)}
             />
             <input
+              required
               type="text"
               placeholder="DNI"
               name="dni"
               onChange={(e) => handleChangeRegister(e)}
             />
             <input
+              required
               type="text"
               placeholder="Correo"
               name="email"
               onChange={(e) => handleChangeRegister(e)}
             />
             <input
+              required
               type="text"
               placeholder="Contraseña"
               name="password"
               onChange={(e) => handleChangeRegister(e)}
             />
             <input
+              required
               type="text"
               placeholder="Confirmar contraseña"
               name="confirmPassword"
