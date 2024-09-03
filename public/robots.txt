@@ -5,4 +5,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.padelcrown.store/sitemap.xml
+Sitemap: https://www.padelcrown.site/sitemap.xml
