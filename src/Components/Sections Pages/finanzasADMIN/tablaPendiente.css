@@ -1,0 +1,44 @@
+.cuota-pendiente-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(39, 131, 0, 0.339);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 4px solid #4caf50;
+  }
+
+  .cuota-pendiente-cont:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.457);
+  }
+
+  .cuota-pendiente-cont-p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+  }
+
+  .cuota-pendiente-cont-btn {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cuota-pendiente-cont-btn:hover {
+    background-color: #45a049;
+  }
+
+  .cuota-pendiente-cont-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }

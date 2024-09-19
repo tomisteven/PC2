@@ -5,6 +5,7 @@ import { Table, Button } from "semantic-ui-react";
 import { CobrosAPI } from "../../../api/Cobros";
 import LoadingCobros from "../finanzasCLIENTE/componentes/LoadingCobros";
 import swal from "sweetalert";
+import TablaPendientes from "./TablaPendientes";
 
 const client = new CobrosAPI();
 export default function FinanzasAdmin() {
@@ -76,6 +77,7 @@ export default function FinanzasAdmin() {
     <div className="finanzas-admin-cont">
       {user ? (
         <div className="tabla-table">
+          <TablaPendientes data={data} confirmarCliente={confirmarCliente} />
           <h1>Finanzas Admin</h1>
           <Table
             celled
@@ -101,7 +103,7 @@ export default function FinanzasAdmin() {
             <Table.Body>
               {data.length > 0 &&
                 data.map((item) => (
-                  <Table.Row>
+                  <Table.Row key={item._id}>
                     <Table.Cell>{item.nombre}</Table.Cell>
 
                     <Table.Cell>{item.email}</Table.Cell>
