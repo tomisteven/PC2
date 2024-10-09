@@ -22,7 +22,7 @@ export class CobrosAPI {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({confirmadoPorAdministracion: true }),
+      body: JSON.stringify({ confirmadoPorAdministracion: true }),
     });
     const data = await response.json();
     return data;
@@ -86,6 +86,21 @@ export class CobrosAPI {
     const res = await fetch(
       this.urlAdmin +
         `verificar/pago/${idCliente}/cuota/${idCuota}?confirmacion=Aprobado`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await res.json();
+    return data;
+  }
+
+  async rechazarPago(idCliente, idCuota) {
+    const res = await fetch(
+      this.urlAdmin +
+        `verificar/pago/${idCliente}/cuota/${idCuota}?confirmacion=Rechazado`,
       {
         method: "POST",
         headers: {

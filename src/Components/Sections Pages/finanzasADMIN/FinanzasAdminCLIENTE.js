@@ -64,6 +64,26 @@ export default function FinanzasAdminCLIENTE() {
     }
   };
 
+  const rechazarCuota = (cuota) => {
+    swal({
+      title: "¿Estas seguro de rechazar esta cuota?",
+      text: "Una vez rechazada no se podra deshacer",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then(async (willConfirm) => {
+      if (willConfirm) {
+        const res = await client.rechazarPago(id, cuota._id);
+        res && onChangeState();
+        swal("Cuota rechazada", {
+          icon: "success",
+        });
+      } else {
+        swal("No se ha rechazado la cuota");
+      }
+    });
+  };
+
   const verificarCuotas = (cuota) => {
     swal({
       title: "¿Estas seguro de confirmar estas cuotas?",
@@ -91,9 +111,11 @@ export default function FinanzasAdminCLIENTE() {
   return (
     <div>
       <div className="cliente-admin-finanzas">
-        <Button icon="arrow circle left" color="green" onClick={
-            () => window.location.href = "/admin/cobros/5423456756"
-        }/>
+        <Button
+          icon="arrow circle left"
+          color="green"
+          onClick={() => (window.location.href = "/admin/cobros/5423456756")}
+        />
         <div className="cont-inputs-cliente">
           <h5>Datos Personales</h5>
           <div class="cont-input-label">
@@ -248,7 +270,11 @@ export default function FinanzasAdminCLIENTE() {
                         color="green"
                         onClick={() => verificarCuotas(item)}
                       />
-                      <Button icon="close" color="red" />
+                      <Button
+                        icon="close"
+                        color="red"
+                        onClick={() => rechazarCuota(item)}
+                      />
                     </Table.Cell>
                   </Table.Row>
                 ))}

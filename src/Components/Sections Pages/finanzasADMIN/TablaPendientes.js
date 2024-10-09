@@ -3,9 +3,6 @@ import "./tablaPendiente.css";
 
 export default function TablaPendientes({
   data,
-  state,
-  setState,
-  confirmarCliente,
 }) {
   const [cuotasPendientes, setCuotasPendientes] = useState([]);
 
