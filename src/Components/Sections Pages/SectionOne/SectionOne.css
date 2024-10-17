@@ -1,7 +1,8 @@
 .first-section {
-  background-size: cover;
-  object-fit: cover;
-  background-position: center;
+  background-size: contain;
+  object-fit: contain;
+  margin-top: 65px;
+  background-position: bottom;
   height: 100vh;
   display: flex;
   width: 100%;
@@ -13,10 +14,8 @@
 }
 
 .content {
-
-  max-width: 690px;
-  padding: 50px;
-  margin-top: 100px;
+  margin: auto;
+  margin-top: 500px;
 }
 
 .title-f {
@@ -32,8 +31,8 @@
 }
 
 .start-button {
-  background: #00BF63;
-  color: #ffffffd0;
+  background: #00bf63;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   font-size: 15px;
@@ -41,9 +40,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.start-button-m{
-  background: #fcff30;
-  color: #ffffffd0;
+.start-button-m {
+  background: #00bf63;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   font-size: 15px;
@@ -53,19 +52,18 @@
   margin-top: 20px;
   margin-left: 20px;
 }
-.a-button-m{
+.a-button-m {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 .a-button {
   text-decoration: none;
-  color: #000000d0;
+  color: #ffffff;
 }
 
-.a-button-r{
+.a-button-r {
   text-decoration: none;
   color: #000000d0;
-
 }
 
 /* .start-button:hover {
@@ -76,7 +74,7 @@
 } */
 
 .start-button-r {
-  background: #fea238;
+  background: #00bf63;
   color: #000000d0;
   border: none;
   padding: 10px 20px;
@@ -112,7 +110,6 @@
   100% {
     transform: translateY(0);
   }
-
 }
 
 .down-div img {
@@ -139,7 +136,6 @@
   animation: slideInLeft 1.5s ease forwards;
 }
 
-
 /* responsive */
 
 @media screen and (max-width: 767px) {
@@ -152,31 +148,30 @@
     height: auto;
     padding: 0;
   }
-  .title-f{
+  .title-f {
     font-size: 23px;
   }
-  .subtitle{
+  .subtitle {
     font-size: 13px;
   }
-  .content{
+  .content {
     padding: 20px;
   }
-  .start-button{
+  .start-button {
     font-size: 12px;
     padding: 10px 17px;
-    background-color: #1d9a0c
+    background-color: #1d9a0c;
   }
-  .a-button{
+  .a-button {
     color: #ffffff;
   }
 
-  .down-div{
+  .down-div {
     left: 0%;
     margin-top: 300px;
   }
-  .down-div img{
+  .down-div img {
     width: 70px;
     height: 70px;
   }
-
 }

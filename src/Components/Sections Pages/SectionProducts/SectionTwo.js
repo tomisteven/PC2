@@ -15,7 +15,7 @@ import SectionOne from "../SectionOne/SectionOne";
 import SectionEnvios from "./SectionEnvios";
 import SectionImgs from "./SectionImgs.js";
 import BtnWhatssapp from "../../BtnWhatssapp.js";
-import BtnPaletaPersonalizada from "./BtnPaletaPersonalizada.js";
+/* import BtnPaletaPersonalizada from "./BtnPaletaPersonalizada.js"; */
 import BtnSeguimiento from "./BtnSeguimiento.js";
 
 export default function SectionTwo() {
@@ -98,7 +98,7 @@ const categorias = [
       <SectionImgs />
       <SectionEnvios />
       <BtnWhatssapp /> {/* boton flotante w app */}
-      <BtnPaletaPersonalizada /> {/* boton flotante paleta personalizada */}
+      {/* <BtnPaletaPersonalizada /> */} {/* boton flotante paleta personalizada */}
       <BtnSeguimiento titulo={"Seguimiento Pedido"} icono={"truck"} link={"/seguimiento"}/> {/* boton flotante seguimiento de pedido */}
 
       <BtnMenuExpandible
