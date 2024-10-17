@@ -145,8 +145,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: auto;
-    padding: 0;
+    height: 100vh;
   }
   .title-f {
     font-size: 23px;
